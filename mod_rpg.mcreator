@@ -1,0 +1,172 @@
+{
+  "mod_elements": [
+    {
+      "name": "Esseysore",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esseysore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modrpg/block/EsseysoreBlock.java",
+          "src/main/resources/assets/mod_rpg/blockstates/esseysore.json",
+          "src/main/resources/data/mod_rpg/worldgen/placed_feature/esseysore.json",
+          "src/main/resources/assets/mod_rpg/models/item/esseysore.json",
+          "src/main/resources/assets/mod_rpg/models/block/esseysore.json",
+          "src/main/resources/data/mod_rpg/neoforge/biome_modifier/esseysore_biome_modifier.json",
+          "src/main/resources/data/mod_rpg/worldgen/configured_feature/esseysore.json",
+          "src/main/resources/data/mod_rpg/loot_table/blocks/esseysore.json",
+          "src/main/resources/assets/mod_rpg/items/esseysore.json"
+        ]
+      }
+    },
+    {
+      "name": "Esseysingot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esseysingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modrpg/item/EsseysingotItem.java",
+          "src/main/resources/assets/mod_rpg/models/item/esseysingot.json",
+          "src/main/resources/assets/mod_rpg/items/esseysingot.json"
+        ]
+      }
+    },
+    {
+      "name": "Rawesseysore",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawesseysore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/modrpg/item/RawesseysoreItem.java",
+          "src/main/resources/assets/mod_rpg/items/rawesseysore.json",
+          "src/main/resources/assets/mod_rpg/models/item/rawesseysore.json"
+        ]
+      }
+    },
+    {
+      "name": "Esseysingotrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "esseysingotrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_rpg/advancement/recipes/esseysingotrecipe.json",
+          "src/main/resources/data/mod_rpg/recipe/esseysingotrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Axeesseys",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axeesseys",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mod_rpg/models/item/axeesseys.json",
+          "src/main/java/net/mcreator/modrpg/item/AxeesseysItem.java",
+          "src/main/resources/assets/mod_rpg/items/axeesseys.json"
+        ]
+      }
+    },
+    {
+      "name": "Axeesseysrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axeesseysrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mod_rpg/recipe/axe_esseys_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "AxeesseysQuandoClicadoComOBotaoDireito",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axeesseys_quando_clicado_com_o_botao_direito",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/modrpg/procedures/AxeesseysQuandoClicadoComOBotaoDireitoProcedure.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Esseysore"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Esseysore"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~CUSTOM:Axeesseys"
+    ],
+    "ITEMS:mod_rpg:axeesseys_repair_items": [
+      "~CUSTOM:Esseysingot"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.mod_rpg.esseysore": "Esseys_ore",
+      "item.mod_rpg.esseysingot": "Esseys_ingot",
+      "item.mod_rpg.rawesseysore": "Raw_esseys_ore",
+      "item.mod_rpg.axeesseys": "Axeesseys"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/modrpg/init/ModRpgModTabs.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/modrpg/ModRpgMod.java",
+      "src/main/java/net/mcreator/modrpg/init/ModRpgModBlocks.java",
+      "src/main/java/net/mcreator/modrpg/init/ModRpgModItems.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mod_rpg",
+    "modName": "mod_rpg",
+    "version": "1.0.0",
+    "author": "MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.4",
+    "modElementsPackage": "net.mcreator.modrpg"
+  },
+  "mcreatorVersion": 202500228610
+}
